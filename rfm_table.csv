@@ -1,0 +1,683 @@
+CustomerID,Recency,Frequency,Monetary,Cluster,Segment,Country
+C10001,117,3,22885.809999999998,1,Champions (High-Value Loyal),India
+C10003,33,1,12061.04,0,Recent Moderate Buyers,United Kingdom
+C10004,40,2,10579.97,0,Recent Moderate Buyers,United Kingdom
+C10005,297,2,14154.57,3,At-Risk Big Spenders,Germany
+C10006,31,3,27389.290000000005,1,Champions (High-Value Loyal),India
+C10007,74,4,18247.42,1,Champions (High-Value Loyal),Netherlands
+C10008,8,3,15900.74,1,Champions (High-Value Loyal),United Kingdom
+C10009,192,2,9138.4,3,At-Risk Big Spenders,United Kingdom
+C10010,110,2,8610.83,0,Recent Moderate Buyers,United Kingdom
+C10011,101,1,706.78,2,Low-Value Customers,United Kingdom
+C10012,224,1,9485.27,3,At-Risk Big Spenders,United Kingdom
+C10014,76,2,44386.66,0,Recent Moderate Buyers,United Kingdom
+C10015,24,3,27418.48,1,Champions (High-Value Loyal),India
+C10016,152,2,6347.87,3,At-Risk Big Spenders,United Kingdom
+C10017,19,1,2901.65,0,Recent Moderate Buyers,United Kingdom
+C10018,92,1,8604.92,0,Recent Moderate Buyers,India
+C10021,131,2,15502.15,0,Recent Moderate Buyers,France
+C10023,212,3,16624.32,3,At-Risk Big Spenders,United Kingdom
+C10025,136,3,16237.1,1,Champions (High-Value Loyal),Australia
+C10027,58,2,38387.14,0,Recent Moderate Buyers,United Kingdom
+C10028,4,5,21765.78,1,Champions (High-Value Loyal),United Kingdom
+C10029,161,1,3399.69,2,Low-Value Customers,EIRE
+C10030,248,1,5671.55,3,At-Risk Big Spenders,India
+C10031,285,1,35387.29,3,At-Risk Big Spenders,France
+C10032,61,2,21031.96,0,Recent Moderate Buyers,Germany
+C10033,16,1,3152.19,0,Recent Moderate Buyers,United Kingdom
+C10035,226,2,11499.62,3,At-Risk Big Spenders,United Kingdom
+C10036,303,1,14067.069999999998,3,At-Risk Big Spenders,United Kingdom
+C10038,40,1,3600.58,0,Recent Moderate Buyers,India
+C10039,30,2,10287.849999999999,0,Recent Moderate Buyers,Netherlands
+C10041,57,2,10991.81,0,Recent Moderate Buyers,India
+C10042,171,3,6080.18,3,At-Risk Big Spenders,United Kingdom
+C10043,185,2,9670.71,3,At-Risk Big Spenders,United Kingdom
+C10044,218,2,11581.619999999999,3,At-Risk Big Spenders,United Kingdom
+C10045,184,3,11177.9,3,At-Risk Big Spenders,United Kingdom
+C10046,273,4,33107.76,1,Champions (High-Value Loyal),United Kingdom
+C10047,192,2,9296.14,3,At-Risk Big Spenders,United Kingdom
+C10048,303,1,24667.88,3,At-Risk Big Spenders,United Kingdom
+C10049,286,1,13512.23,3,At-Risk Big Spenders,India
+C10050,273,2,4796.66,3,At-Risk Big Spenders,United Kingdom
+C10051,20,1,7838.55,0,Recent Moderate Buyers,United Kingdom
+C10054,196,1,6096.74,3,At-Risk Big Spenders,Portugal
+C10055,263,1,3144.7200000000003,3,At-Risk Big Spenders,India
+C10056,167,2,4359.58,3,At-Risk Big Spenders,India
+C10057,11,1,1581.78,2,Low-Value Customers,United Kingdom
+C10058,282,1,3577.16,3,At-Risk Big Spenders,Germany
+C10059,105,2,13689.19,0,Recent Moderate Buyers,United Kingdom
+C10060,249,1,13548.21,3,At-Risk Big Spenders,United Kingdom
+C10061,270,1,7213.26,3,At-Risk Big Spenders,Canada
+C10062,69,4,32858.71,1,Champions (High-Value Loyal),India
+C10063,182,3,27891.769999999997,1,Champions (High-Value Loyal),United Kingdom
+C10064,136,3,39755.21,1,Champions (High-Value Loyal),India
+C10066,11,2,30582.429999999997,0,Recent Moderate Buyers,France
+C10067,162,1,7914.46,3,At-Risk Big Spenders,United Kingdom
+C10068,14,1,8119.380000000001,0,Recent Moderate Buyers,United Kingdom
+C10070,62,2,9674.630000000001,0,Recent Moderate Buyers,United Kingdom
+C10071,74,1,6065.3,0,Recent Moderate Buyers,United Kingdom
+C10072,96,1,3264.27,2,Low-Value Customers,Portugal
+C10073,328,1,2645.6,3,At-Risk Big Spenders,Netherlands
+C10074,3,3,4900.28,0,Recent Moderate Buyers,United Kingdom
+C10075,319,1,7622.620000000001,3,At-Risk Big Spenders,India
+C10076,112,1,9834.92,0,Recent Moderate Buyers,United Kingdom
+C10077,52,3,17236.48,1,Champions (High-Value Loyal),Spain
+C10080,43,3,13395.279999999999,1,Champions (High-Value Loyal),United Kingdom
+C10081,128,1,11131.09,0,Recent Moderate Buyers,United Kingdom
+C10082,142,1,3934.63,2,Low-Value Customers,United Kingdom
+C10083,130,2,11108.77,0,Recent Moderate Buyers,India
+C10084,30,3,11986.84,1,Champions (High-Value Loyal),Netherlands
+C10086,17,2,5303.469999999999,0,Recent Moderate Buyers,United Kingdom
+C10087,8,2,10036.68,0,Recent Moderate Buyers,Singapore
+C10088,213,2,9070.11,3,At-Risk Big Spenders,United Kingdom
+C10089,298,1,12381.25,3,At-Risk Big Spenders,United Kingdom
+C10091,25,4,43040.799999999996,1,Champions (High-Value Loyal),United Kingdom
+C10092,27,1,2932.17,0,Recent Moderate Buyers,India
+C10093,130,2,30079.25,0,Recent Moderate Buyers,France
+C10094,223,2,23375.72,3,At-Risk Big Spenders,United Kingdom
+C10095,37,2,3142.05,0,Recent Moderate Buyers,United Kingdom
+C10097,147,1,8524.800000000001,3,At-Risk Big Spenders,Singapore
+C10098,126,2,1749.6399999999999,2,Low-Value Customers,United Kingdom
+C10099,165,2,2812.42,2,Low-Value Customers,Canada
+C10100,104,3,30175.15,1,Champions (High-Value Loyal),Netherlands
+C10101,31,4,23502.25,1,Champions (High-Value Loyal),United Kingdom
+C10102,104,1,4117.53,2,Low-Value Customers,Germany
+C10103,28,2,9298.1,0,Recent Moderate Buyers,India
+C10104,116,3,8238.29,1,Champions (High-Value Loyal),United Kingdom
+C10105,33,1,10112.64,0,Recent Moderate Buyers,United Kingdom
+C10106,64,2,1815.4,2,Low-Value Customers,India
+C10107,103,1,5160.4,0,Recent Moderate Buyers,United Kingdom
+C10108,233,1,2520.6800000000003,2,Low-Value Customers,United Kingdom
+C10109,19,1,10504.189999999999,0,Recent Moderate Buyers,United Kingdom
+C10110,13,2,17646.0,0,Recent Moderate Buyers,Australia
+C10111,36,4,13408.47,1,Champions (High-Value Loyal),Netherlands
+C10112,131,3,20702.33,1,Champions (High-Value Loyal),United Kingdom
+C10113,325,1,998.1,2,Low-Value Customers,United Kingdom
+C10114,39,1,9292.01,0,Recent Moderate Buyers,United Kingdom
+C10115,119,1,2370.12,2,Low-Value Customers,Spain
+C10116,1,6,31381.94,1,Champions (High-Value Loyal),Netherlands
+C10117,255,2,10224.93,3,At-Risk Big Spenders,United Kingdom
+C10118,161,1,10000.71,3,At-Risk Big Spenders,India
+C10119,178,2,4477.6,3,At-Risk Big Spenders,India
+C10120,54,4,19286.25,1,Champions (High-Value Loyal),United Kingdom
+C10121,96,3,17973.41,1,Champions (High-Value Loyal),Germany
+C10122,22,3,12865.42,1,Champions (High-Value Loyal),United Kingdom
+C10123,190,1,3227.35,2,Low-Value Customers,France
+C10124,117,1,5132.26,0,Recent Moderate Buyers,United Kingdom
+C10125,205,2,3249.64,3,At-Risk Big Spenders,United Kingdom
+C10126,60,4,32899.86,1,Champions (High-Value Loyal),United Kingdom
+C10127,115,2,15971.04,0,Recent Moderate Buyers,United Kingdom
+C10129,60,1,12169.75,0,Recent Moderate Buyers,Netherlands
+C10131,82,1,1281.88,2,Low-Value Customers,United Kingdom
+C10132,175,2,16386.59,3,At-Risk Big Spenders,United Kingdom
+C10133,6,2,11096.04,0,Recent Moderate Buyers,Netherlands
+C10134,98,3,14197.31,1,Champions (High-Value Loyal),Portugal
+C10135,27,3,33505.61,1,Champions (High-Value Loyal),United Kingdom
+C10137,243,1,4436.31,3,At-Risk Big Spenders,United Kingdom
+C10138,284,2,13301.57,3,At-Risk Big Spenders,Germany
+C10140,16,2,3616.59,0,Recent Moderate Buyers,United Kingdom
+C10141,2,1,11011.18,0,Recent Moderate Buyers,United Kingdom
+C10142,254,1,15645.970000000001,3,At-Risk Big Spenders,United Kingdom
+C10143,31,3,14609.48,1,Champions (High-Value Loyal),United Kingdom
+C10144,148,2,19516.52,0,Recent Moderate Buyers,Netherlands
+C10145,227,1,7233.36,3,At-Risk Big Spenders,United Kingdom
+C10146,7,3,36333.51,1,Champions (High-Value Loyal),United Kingdom
+C10147,15,5,55598.45,1,Champions (High-Value Loyal),United Kingdom
+C10148,30,2,15625.84,0,Recent Moderate Buyers,Germany
+C10149,27,2,18511.309999999998,0,Recent Moderate Buyers,United Kingdom
+C10150,316,1,4422.950000000001,3,At-Risk Big Spenders,United Kingdom
+C10151,41,4,75552.3,1,Champions (High-Value Loyal),Singapore
+C10152,240,1,13029.59,3,At-Risk Big Spenders,India
+C10153,170,1,8418.74,3,At-Risk Big Spenders,United Kingdom
+C10154,161,2,3245.17,2,Low-Value Customers,United Kingdom
+C10155,241,1,376.79,2,Low-Value Customers,United Kingdom
+C10157,11,2,19045.78,0,Recent Moderate Buyers,United Kingdom
+C10159,298,2,23943.16,3,At-Risk Big Spenders,United Kingdom
+C10163,61,2,10716.94,0,Recent Moderate Buyers,United Kingdom
+C10167,15,1,3081.57,0,Recent Moderate Buyers,United Kingdom
+C10168,106,2,19389.51,0,Recent Moderate Buyers,India
+C10169,85,1,8071.469999999999,0,Recent Moderate Buyers,United Kingdom
+C10170,292,2,6307.09,3,At-Risk Big Spenders,United Kingdom
+C10171,120,2,7636.52,0,Recent Moderate Buyers,Portugal
+C10173,28,4,12493.37,1,Champions (High-Value Loyal),United Kingdom
+C10174,38,1,10110.71,0,Recent Moderate Buyers,France
+C10175,305,1,8823.42,3,At-Risk Big Spenders,France
+C10176,280,2,12657.79,3,At-Risk Big Spenders,United Kingdom
+C10177,11,4,12046.929999999998,1,Champions (High-Value Loyal),United Kingdom
+C10178,3,1,443.0,2,Low-Value Customers,United Kingdom
+C10179,274,1,3938.58,3,At-Risk Big Spenders,United Kingdom
+C10180,71,5,31548.2,1,Champions (High-Value Loyal),United Kingdom
+C10181,16,3,5244.82,0,Recent Moderate Buyers,Germany
+C10182,35,3,9261.04,1,Champions (High-Value Loyal),India
+C10184,82,2,1387.52,2,Low-Value Customers,United Kingdom
+C10185,103,2,22008.440000000002,0,Recent Moderate Buyers,United Kingdom
+C10186,94,1,6687.05,0,Recent Moderate Buyers,United Kingdom
+C10187,221,1,19584.760000000002,3,At-Risk Big Spenders,Netherlands
+C10189,198,2,5657.96,3,At-Risk Big Spenders,United Kingdom
+C10190,72,1,1535.6,2,Low-Value Customers,United Kingdom
+C10191,105,2,2783.79,2,Low-Value Customers,United Kingdom
+C10193,125,1,13843.78,0,Recent Moderate Buyers,United Kingdom
+C10195,46,3,32734.32,1,Champions (High-Value Loyal),United Kingdom
+C10197,231,1,923.44,2,Low-Value Customers,United Kingdom
+C10198,175,1,2389.98,2,Low-Value Customers,United Kingdom
+C10199,236,2,23013.53,3,At-Risk Big Spenders,Singapore
+C10200,111,2,18445.02,0,Recent Moderate Buyers,EIRE
+C10201,192,2,21442.7,3,At-Risk Big Spenders,Australia
+C10202,132,1,10506.64,0,Recent Moderate Buyers,Spain
+C10204,225,4,29003.38,1,Champions (High-Value Loyal),United Kingdom
+C10205,5,5,41074.01,1,Champions (High-Value Loyal),United Kingdom
+C10206,96,1,17811.54,0,Recent Moderate Buyers,United Kingdom
+C10207,37,2,5613.77,0,Recent Moderate Buyers,United Kingdom
+C10208,99,2,5442.9,0,Recent Moderate Buyers,United Kingdom
+C10211,42,1,20348.199999999997,0,Recent Moderate Buyers,United Kingdom
+C10212,50,2,15503.91,0,Recent Moderate Buyers,France
+C10213,116,1,2205.75,2,Low-Value Customers,United Kingdom
+C10214,44,2,38228.97,0,Recent Moderate Buyers,United Kingdom
+C10215,126,1,8746.57,0,Recent Moderate Buyers,Australia
+C10218,87,1,18165.600000000002,0,Recent Moderate Buyers,Germany
+C10219,277,1,1164.68,2,Low-Value Customers,United Kingdom
+C10220,170,3,18341.97,1,Champions (High-Value Loyal),United Kingdom
+C10221,39,1,1149.56,2,Low-Value Customers,Australia
+C10222,6,4,5613.89,1,Champions (High-Value Loyal),United Kingdom
+C10223,297,1,835.54,2,Low-Value Customers,United Kingdom
+C10224,69,3,23057.61,1,Champions (High-Value Loyal),Germany
+C10225,107,1,15509.28,0,Recent Moderate Buyers,United Kingdom
+C10226,143,1,3520.93,2,Low-Value Customers,India
+C10227,158,2,12191.85,3,At-Risk Big Spenders,United Kingdom
+C10228,218,2,9557.48,3,At-Risk Big Spenders,EIRE
+C10229,29,1,1477.06,2,Low-Value Customers,United Kingdom
+C10231,284,1,38534.58,3,At-Risk Big Spenders,United Kingdom
+C10232,181,2,5511.09,3,At-Risk Big Spenders,United Kingdom
+C10234,201,3,28097.69,1,Champions (High-Value Loyal),India
+C10235,37,2,17401.55,0,Recent Moderate Buyers,United Kingdom
+C10236,57,1,5509.54,0,Recent Moderate Buyers,United Kingdom
+C10237,25,3,44009.159999999996,1,Champions (High-Value Loyal),Netherlands
+C10238,110,3,13454.48,1,Champions (High-Value Loyal),United Kingdom
+C10240,1,4,28266.57,1,Champions (High-Value Loyal),India
+C10241,298,1,929.21,2,Low-Value Customers,United Kingdom
+C10242,146,1,5875.1,3,At-Risk Big Spenders,India
+C10243,107,2,16139.220000000001,0,Recent Moderate Buyers,United Kingdom
+C10244,170,2,20334.0,3,At-Risk Big Spenders,Portugal
+C10245,68,2,13951.369999999999,0,Recent Moderate Buyers,United Kingdom
+C10247,32,2,7559.08,0,Recent Moderate Buyers,United Kingdom
+C10248,86,2,79880.85,1,Champions (High-Value Loyal),United Kingdom
+C10249,47,4,10023.76,1,Champions (High-Value Loyal),India
+C10250,215,1,9053.52,3,At-Risk Big Spenders,United Kingdom
+C10251,10,1,9444.32,0,Recent Moderate Buyers,United Kingdom
+C10253,135,1,851.57,2,Low-Value Customers,United Kingdom
+C10254,90,1,3204.58,2,Low-Value Customers,United Kingdom
+C10255,76,3,13475.36,1,Champions (High-Value Loyal),Singapore
+C10256,314,2,6401.15,3,At-Risk Big Spenders,Singapore
+C10258,61,3,18889.28,1,Champions (High-Value Loyal),United Kingdom
+C10259,299,1,2159.0,2,Low-Value Customers,United Kingdom
+C10260,31,1,4310.13,0,Recent Moderate Buyers,Portugal
+C10261,79,3,9931.33,1,Champions (High-Value Loyal),Netherlands
+C10262,102,5,47017.89,1,Champions (High-Value Loyal),Netherlands
+C10264,293,1,3510.63,3,At-Risk Big Spenders,United Kingdom
+C10265,137,1,3734.69,2,Low-Value Customers,EIRE
+C10266,110,3,17676.51,1,Champions (High-Value Loyal),India
+C10268,42,3,29904.79,1,Champions (High-Value Loyal),Canada
+C10269,15,2,21113.43,0,Recent Moderate Buyers,India
+C10270,91,2,8311.94,0,Recent Moderate Buyers,United Kingdom
+C10271,40,1,1734.65,2,Low-Value Customers,France
+C10273,120,2,11482.859999999999,0,Recent Moderate Buyers,India
+C10275,289,1,29221.98,3,At-Risk Big Spenders,United Kingdom
+C10276,237,1,8181.28,3,At-Risk Big Spenders,United Kingdom
+C10277,115,1,3237.4300000000003,2,Low-Value Customers,United Kingdom
+C10278,79,2,3893.95,0,Recent Moderate Buyers,United Kingdom
+C10279,212,2,3714.16,3,At-Risk Big Spenders,United Kingdom
+C10280,38,4,19932.81,1,Champions (High-Value Loyal),India
+C10281,284,3,12085.34,3,At-Risk Big Spenders,Germany
+C10282,136,1,11544.34,0,Recent Moderate Buyers,United Kingdom
+C10283,285,1,1472.83,2,Low-Value Customers,India
+C10284,198,1,9184.32,3,At-Risk Big Spenders,United Kingdom
+C10285,19,2,10454.03,0,Recent Moderate Buyers,United Kingdom
+C10286,84,3,15401.88,1,Champions (High-Value Loyal),Spain
+C10287,118,1,13356.83,0,Recent Moderate Buyers,EIRE
+C10288,80,2,45549.990000000005,0,Recent Moderate Buyers,United Kingdom
+C10289,184,3,32308.660000000003,1,Champions (High-Value Loyal),United Kingdom
+C10291,26,2,14005.859999999999,0,Recent Moderate Buyers,United Kingdom
+C10292,248,4,46169.9,1,Champions (High-Value Loyal),France
+C10293,68,1,4214.68,0,Recent Moderate Buyers,India
+C10296,30,3,15708.57,1,Champions (High-Value Loyal),United Kingdom
+C10297,199,1,8138.740000000001,3,At-Risk Big Spenders,United Kingdom
+C10299,119,1,1739.44,2,Low-Value Customers,United Kingdom
+C10301,167,2,5390.87,3,At-Risk Big Spenders,Spain
+C10303,143,3,17091.07,1,Champions (High-Value Loyal),EIRE
+C10304,154,1,1853.98,2,Low-Value Customers,India
+C10305,13,2,14425.53,0,Recent Moderate Buyers,United Kingdom
+C10306,99,3,36993.32,1,Champions (High-Value Loyal),United Kingdom
+C10307,28,2,21837.879999999997,0,Recent Moderate Buyers,United Kingdom
+C10309,269,2,4310.2699999999995,3,At-Risk Big Spenders,France
+C10310,191,1,4883.06,3,At-Risk Big Spenders,Netherlands
+C10311,2,2,8231.029999999999,0,Recent Moderate Buyers,Netherlands
+C10312,19,2,21743.55,0,Recent Moderate Buyers,United Kingdom
+C10313,2,1,3206.66,0,Recent Moderate Buyers,United Kingdom
+C10314,24,3,9400.18,1,Champions (High-Value Loyal),United Kingdom
+C10315,104,2,11085.28,0,Recent Moderate Buyers,France
+C10316,2,3,6482.29,0,Recent Moderate Buyers,Netherlands
+C10317,24,1,5874.099999999999,0,Recent Moderate Buyers,United Kingdom
+C10318,68,2,10848.21,0,Recent Moderate Buyers,India
+C10319,88,2,12500.93,0,Recent Moderate Buyers,United Kingdom
+C10320,18,2,8666.9,0,Recent Moderate Buyers,Spain
+C10321,130,1,5850.08,0,Recent Moderate Buyers,Netherlands
+C10323,5,2,5743.25,0,Recent Moderate Buyers,France
+C10324,32,1,1722.4699999999998,2,Low-Value Customers,Netherlands
+C10326,62,2,12759.439999999999,0,Recent Moderate Buyers,Germany
+C10327,29,2,32933.450000000004,0,Recent Moderate Buyers,United Kingdom
+C10328,90,2,4305.7,0,Recent Moderate Buyers,Portugal
+C10330,4,2,29557.33,0,Recent Moderate Buyers,Netherlands
+C10331,262,2,20618.93,3,At-Risk Big Spenders,France
+C10332,33,3,11069.29,1,Champions (High-Value Loyal),United Kingdom
+C10333,96,3,16511.56,1,Champions (High-Value Loyal),France
+C10336,133,1,4321.59,2,Low-Value Customers,EIRE
+C10337,263,1,4846.74,3,At-Risk Big Spenders,United Kingdom
+C10338,17,2,8733.24,0,Recent Moderate Buyers,France
+C10339,212,2,30611.48,3,At-Risk Big Spenders,United Kingdom
+C10340,103,2,20563.84,0,Recent Moderate Buyers,United Kingdom
+C10341,73,1,1461.93,2,Low-Value Customers,France
+C10342,53,2,17778.86,0,Recent Moderate Buyers,United Kingdom
+C10346,316,1,1692.5700000000002,2,Low-Value Customers,Netherlands
+C10347,127,3,9251.99,1,Champions (High-Value Loyal),Australia
+C10348,215,1,5432.18,3,At-Risk Big Spenders,United Kingdom
+C10349,248,1,455.98,2,Low-Value Customers,India
+C10350,55,2,11488.82,0,Recent Moderate Buyers,United Kingdom
+C10352,115,2,16330.92,0,Recent Moderate Buyers,United Kingdom
+C10354,33,2,13940.76,0,Recent Moderate Buyers,United Kingdom
+C10355,181,2,18045.45,3,At-Risk Big Spenders,Canada
+C10356,144,2,27577.940000000002,0,Recent Moderate Buyers,United Kingdom
+C10357,109,2,8651.6,0,Recent Moderate Buyers,Australia
+C10358,189,1,1310.83,2,Low-Value Customers,United Kingdom
+C10359,178,1,7503.71,3,At-Risk Big Spenders,United Kingdom
+C10360,7,3,3640.2200000000003,0,Recent Moderate Buyers,United Kingdom
+C10361,191,1,7920.9400000000005,3,At-Risk Big Spenders,Germany
+C10362,18,5,39581.62,1,Champions (High-Value Loyal),United Kingdom
+C10363,274,1,5740.780000000001,3,At-Risk Big Spenders,India
+C10364,255,1,1019.29,2,Low-Value Customers,United Kingdom
+C10366,289,1,10803.82,3,At-Risk Big Spenders,United Kingdom
+C10367,69,1,5279.21,0,Recent Moderate Buyers,United Kingdom
+C10368,42,5,39968.61,1,Champions (High-Value Loyal),India
+C10369,136,1,1373.3500000000001,2,Low-Value Customers,United Kingdom
+C10370,153,1,4030.11,2,Low-Value Customers,Spain
+C10371,305,2,9236.33,3,At-Risk Big Spenders,United Kingdom
+C10372,282,1,5179.77,3,At-Risk Big Spenders,Germany
+C10373,66,2,5072.43,0,Recent Moderate Buyers,Germany
+C10374,170,2,8284.79,3,At-Risk Big Spenders,India
+C10375,77,2,13597.82,0,Recent Moderate Buyers,United Kingdom
+C10376,127,1,6863.82,0,Recent Moderate Buyers,United Kingdom
+C10377,148,3,18916.7,1,Champions (High-Value Loyal),India
+C10378,140,2,9415.220000000001,0,Recent Moderate Buyers,United Kingdom
+C10379,59,4,45014.229999999996,1,Champions (High-Value Loyal),United Kingdom
+C10380,11,3,13747.86,1,Champions (High-Value Loyal),EIRE
+C10382,301,1,271.04,2,Low-Value Customers,United Kingdom
+C10383,21,2,55774.29,0,Recent Moderate Buyers,United Kingdom
+C10384,21,2,3778.57,0,Recent Moderate Buyers,United Kingdom
+C10385,37,4,17919.420000000002,1,Champions (High-Value Loyal),United Kingdom
+C10386,24,3,20323.98,1,Champions (High-Value Loyal),United Kingdom
+C10387,119,1,6753.3,0,Recent Moderate Buyers,United Kingdom
+C10388,292,1,7751.0599999999995,3,At-Risk Big Spenders,United Kingdom
+C10390,159,1,3886.65,2,Low-Value Customers,India
+C10391,126,2,59477.060000000005,1,Champions (High-Value Loyal),Spain
+C10393,182,2,10952.32,3,At-Risk Big Spenders,United Kingdom
+C10394,70,1,11515.34,0,Recent Moderate Buyers,United Kingdom
+C10395,40,1,704.8299999999999,2,Low-Value Customers,United Kingdom
+C10396,328,1,5255.64,3,At-Risk Big Spenders,United Kingdom
+C10397,167,1,4347.0,2,Low-Value Customers,United Kingdom
+C10398,164,1,7686.5,3,At-Risk Big Spenders,United Kingdom
+C10399,110,5,26212.26,1,Champions (High-Value Loyal),India
+C10400,230,1,2664.31,2,Low-Value Customers,United Kingdom
+C10401,101,1,5131.22,0,Recent Moderate Buyers,United Kingdom
+C10402,234,2,5864.200000000001,3,At-Risk Big Spenders,United Kingdom
+C10403,93,5,24679.97,1,Champions (High-Value Loyal),United Kingdom
+C10404,61,5,51588.92,1,Champions (High-Value Loyal),Spain
+C10406,15,1,2822.84,0,Recent Moderate Buyers,United Kingdom
+C10407,81,5,25509.71,1,Champions (High-Value Loyal),United Kingdom
+C10409,294,1,7781.049999999999,3,At-Risk Big Spenders,India
+C10410,229,1,6449.69,3,At-Risk Big Spenders,United Kingdom
+C10411,63,1,13261.78,0,Recent Moderate Buyers,France
+C10412,90,5,43513.82,1,Champions (High-Value Loyal),Germany
+C10413,7,4,22026.28,1,Champions (High-Value Loyal),India
+C10416,30,5,35326.8,1,Champions (High-Value Loyal),United Kingdom
+C10417,51,2,8034.94,0,Recent Moderate Buyers,United Kingdom
+C10418,147,2,15989.53,0,Recent Moderate Buyers,United Kingdom
+C10419,73,4,28844.24,1,Champions (High-Value Loyal),EIRE
+C10420,234,1,6890.21,3,At-Risk Big Spenders,United Kingdom
+C10421,191,1,8080.17,3,At-Risk Big Spenders,United Kingdom
+C10422,42,3,20290.09,1,Champions (High-Value Loyal),India
+C10423,234,3,8149.86,3,At-Risk Big Spenders,United Kingdom
+C10424,194,2,11861.48,3,At-Risk Big Spenders,India
+C10425,47,1,2193.06,2,Low-Value Customers,United Kingdom
+C10426,79,2,5443.17,0,Recent Moderate Buyers,United Kingdom
+C10428,235,1,1335.7,2,Low-Value Customers,United Kingdom
+C10429,26,2,2981.63,0,Recent Moderate Buyers,Germany
+C10430,83,2,2529.79,2,Low-Value Customers,France
+C10431,280,1,1401.3899999999999,2,Low-Value Customers,United Kingdom
+C10432,239,1,2653.7200000000003,2,Low-Value Customers,United Kingdom
+C10433,131,2,3511.71,2,Low-Value Customers,United Kingdom
+C10435,70,3,28948.01,1,Champions (High-Value Loyal),United Kingdom
+C10436,115,1,2705.15,2,Low-Value Customers,United Kingdom
+C10437,264,3,23879.510000000002,3,At-Risk Big Spenders,United Kingdom
+C10438,50,3,5964.57,0,Recent Moderate Buyers,EIRE
+C10439,273,2,9436.18,3,At-Risk Big Spenders,United Kingdom
+C10440,50,3,7407.2,1,Champions (High-Value Loyal),France
+C10441,198,1,5264.360000000001,3,At-Risk Big Spenders,India
+C10442,103,2,12402.699999999999,0,Recent Moderate Buyers,Canada
+C10445,57,4,17095.38,1,Champions (High-Value Loyal),Netherlands
+C10446,37,2,4272.34,0,Recent Moderate Buyers,India
+C10447,48,2,18954.88,0,Recent Moderate Buyers,Germany
+C10448,133,1,2683.44,2,Low-Value Customers,United Kingdom
+C10449,82,3,11574.48,1,Champions (High-Value Loyal),EIRE
+C10450,117,1,19304.76,0,Recent Moderate Buyers,United Kingdom
+C10451,98,1,4074.1200000000003,0,Recent Moderate Buyers,Netherlands
+C10452,98,3,22883.69,1,Champions (High-Value Loyal),Germany
+C10453,2,1,3194.5200000000004,0,Recent Moderate Buyers,United Kingdom
+C10454,201,3,16295.23,3,At-Risk Big Spenders,United Kingdom
+C10455,144,2,29133.94,0,Recent Moderate Buyers,United Kingdom
+C10456,210,2,5270.35,3,At-Risk Big Spenders,India
+C10457,147,2,14537.21,0,Recent Moderate Buyers,Germany
+C10458,90,3,15325.02,1,Champions (High-Value Loyal),United Kingdom
+C10460,5,7,31889.95,1,Champions (High-Value Loyal),United Kingdom
+C10461,28,4,22851.14,1,Champions (High-Value Loyal),United Kingdom
+C10462,173,2,11541.15,3,At-Risk Big Spenders,United Kingdom
+C10464,254,1,559.92,2,Low-Value Customers,United Kingdom
+C10465,251,1,6530.26,3,At-Risk Big Spenders,United Kingdom
+C10466,47,2,7289.400000000001,0,Recent Moderate Buyers,United Kingdom
+C10467,34,1,533.46,2,Low-Value Customers,United Kingdom
+C10468,28,4,18005.9,1,Champions (High-Value Loyal),India
+C10469,152,3,25102.22,1,Champions (High-Value Loyal),India
+C10470,58,2,5281.51,0,Recent Moderate Buyers,United Kingdom
+C10472,100,3,31476.42,1,Champions (High-Value Loyal),United Kingdom
+C10473,1,2,15412.0,0,Recent Moderate Buyers,United Kingdom
+C10474,47,3,30190.92,1,Champions (High-Value Loyal),United Kingdom
+C10475,228,2,33529.33,3,At-Risk Big Spenders,United Kingdom
+C10476,302,1,4404.07,3,At-Risk Big Spenders,Spain
+C10477,197,1,817.29,2,Low-Value Customers,India
+C10478,324,1,789.9300000000001,2,Low-Value Customers,India
+C10479,7,1,2112.17,0,Recent Moderate Buyers,EIRE
+C10481,181,3,28651.64,1,Champions (High-Value Loyal),United Kingdom
+C10482,73,1,4036.01,0,Recent Moderate Buyers,United Kingdom
+C10483,145,1,1770.87,2,Low-Value Customers,United Kingdom
+C10485,131,5,53912.82,1,Champions (High-Value Loyal),EIRE
+C10486,117,2,5792.469999999999,0,Recent Moderate Buyers,Australia
+C10488,73,2,8142.42,0,Recent Moderate Buyers,Germany
+C10489,84,2,73697.70999999999,1,Champions (High-Value Loyal),United Kingdom
+C10490,323,1,1315.92,2,Low-Value Customers,India
+C10491,126,3,5913.38,0,Recent Moderate Buyers,United Kingdom
+C10492,116,2,7612.15,0,Recent Moderate Buyers,United Kingdom
+C10493,208,2,19450.370000000003,3,At-Risk Big Spenders,United Kingdom
+C10494,28,3,7955.540000000001,1,Champions (High-Value Loyal),United Kingdom
+C10495,116,1,11123.48,0,Recent Moderate Buyers,United Kingdom
+C10496,1,3,32267.01,1,Champions (High-Value Loyal),India
+C10497,17,2,921.8799999999999,2,Low-Value Customers,United Kingdom
+C10500,24,3,10223.95,1,Champions (High-Value Loyal),United Kingdom
+C10501,31,3,12983.279999999999,1,Champions (High-Value Loyal),India
+C10502,113,1,32646.529999999995,0,Recent Moderate Buyers,United Kingdom
+C10503,54,2,28211.04,0,Recent Moderate Buyers,United Kingdom
+C10504,78,2,16255.410000000002,0,Recent Moderate Buyers,United Kingdom
+C10505,54,1,12221.84,0,Recent Moderate Buyers,United Kingdom
+C10507,122,2,22423.809999999998,0,Recent Moderate Buyers,United Kingdom
+C10508,62,2,10291.05,0,Recent Moderate Buyers,United Kingdom
+C10509,98,4,11664.34,1,Champions (High-Value Loyal),United Kingdom
+C10510,200,1,5071.72,3,At-Risk Big Spenders,United Kingdom
+C10511,239,1,6001.27,3,At-Risk Big Spenders,United Kingdom
+C10512,110,1,4634.0,0,Recent Moderate Buyers,United Kingdom
+C10514,276,1,8815.22,3,At-Risk Big Spenders,United Kingdom
+C10515,110,2,3096.3300000000004,2,Low-Value Customers,Germany
+C10516,31,1,216.04,2,Low-Value Customers,EIRE
+C10517,254,1,3565.58,3,At-Risk Big Spenders,United Kingdom
+C10518,156,2,27711.56,3,At-Risk Big Spenders,United Kingdom
+C10520,152,2,4788.7,3,At-Risk Big Spenders,United Kingdom
+C10521,72,2,12498.7,0,Recent Moderate Buyers,Singapore
+C10522,50,2,8380.26,0,Recent Moderate Buyers,United Kingdom
+C10523,47,1,17657.199999999997,0,Recent Moderate Buyers,India
+C10524,213,2,9991.27,3,At-Risk Big Spenders,France
+C10526,199,1,3047.66,2,Low-Value Customers,Germany
+C10527,231,1,747.97,2,Low-Value Customers,Portugal
+C10529,140,1,2239.62,2,Low-Value Customers,United Kingdom
+C10530,259,2,18288.06,3,At-Risk Big Spenders,United Kingdom
+C10532,155,2,3589.09,2,Low-Value Customers,India
+C10533,206,3,11163.15,3,At-Risk Big Spenders,United Kingdom
+C10536,55,4,19187.03,1,Champions (High-Value Loyal),Germany
+C10537,124,2,8988.49,0,Recent Moderate Buyers,United Kingdom
+C10538,92,3,20217.36,1,Champions (High-Value Loyal),India
+C10539,138,3,16901.510000000002,1,Champions (High-Value Loyal),Germany
+C10540,134,1,16518.72,0,Recent Moderate Buyers,United Kingdom
+C10541,184,1,2875.29,2,Low-Value Customers,France
+C10542,287,1,3483.23,3,At-Risk Big Spenders,Australia
+C10543,5,2,10128.66,0,Recent Moderate Buyers,United Kingdom
+C10544,176,2,7916.12,3,At-Risk Big Spenders,United Kingdom
+C10545,64,2,5076.05,0,Recent Moderate Buyers,United Kingdom
+C10546,161,2,2503.1800000000003,2,Low-Value Customers,India
+C10547,222,1,6005.68,3,At-Risk Big Spenders,Australia
+C10548,218,1,11800.5,3,At-Risk Big Spenders,United Kingdom
+C10549,3,1,16242.36,0,Recent Moderate Buyers,Germany
+C10552,223,1,2260.38,2,Low-Value Customers,India
+C10554,136,2,17711.42,0,Recent Moderate Buyers,France
+C10555,124,2,2474.5600000000004,2,Low-Value Customers,EIRE
+C10556,5,2,6653.21,0,Recent Moderate Buyers,India
+C10557,273,1,2326.25,2,Low-Value Customers,United Kingdom
+C10558,234,2,10903.060000000001,3,At-Risk Big Spenders,Canada
+C10559,132,1,8573.49,0,Recent Moderate Buyers,France
+C10560,94,2,11202.77,0,Recent Moderate Buyers,United Kingdom
+C10561,241,2,11235.74,3,At-Risk Big Spenders,United Kingdom
+C10562,42,2,2428.23,0,Recent Moderate Buyers,United Kingdom
+C10564,298,1,1160.8,2,Low-Value Customers,United Kingdom
+C10566,121,3,22534.370000000003,1,Champions (High-Value Loyal),EIRE
+C10567,47,3,40718.62,1,Champions (High-Value Loyal),United Kingdom
+C10568,22,1,6042.469999999999,0,Recent Moderate Buyers,Australia
+C10569,216,2,7419.84,3,At-Risk Big Spenders,India
+C10571,50,2,11321.96,0,Recent Moderate Buyers,India
+C10572,211,1,8703.39,3,At-Risk Big Spenders,United Kingdom
+C10573,258,2,7763.52,3,At-Risk Big Spenders,Germany
+C10574,59,1,3535.92,0,Recent Moderate Buyers,Australia
+C10575,124,1,316.79,2,Low-Value Customers,United Kingdom
+C10577,55,3,37793.51,1,Champions (High-Value Loyal),United Kingdom
+C10578,4,1,823.9,2,Low-Value Customers,United Kingdom
+C10579,15,3,13689.66,1,Champions (High-Value Loyal),United Kingdom
+C10580,62,3,16123.3,1,Champions (High-Value Loyal),Germany
+C10581,271,1,2022.72,2,Low-Value Customers,United Kingdom
+C10583,116,2,20364.16,0,Recent Moderate Buyers,EIRE
+C10584,289,2,15595.71,3,At-Risk Big Spenders,United Kingdom
+C10585,147,4,24403.31,1,Champions (High-Value Loyal),Netherlands
+C10586,1,2,9831.650000000001,0,Recent Moderate Buyers,United Kingdom
+C10587,21,4,22735.910000000003,1,Champions (High-Value Loyal),United Kingdom
+C10588,122,2,26297.510000000002,0,Recent Moderate Buyers,India
+C10589,25,2,8256.19,0,Recent Moderate Buyers,United Kingdom
+C10590,138,3,13997.28,1,Champions (High-Value Loyal),United Kingdom
+C10591,121,1,3178.46,2,Low-Value Customers,EIRE
+C10592,4,2,21894.72,0,Recent Moderate Buyers,United Kingdom
+C10593,283,1,951.8299999999999,2,Low-Value Customers,United Kingdom
+C10594,52,3,17787.68,1,Champions (High-Value Loyal),France
+C10595,270,1,3012.96,3,At-Risk Big Spenders,United Kingdom
+C10597,8,5,24559.57,1,Champions (High-Value Loyal),India
+C10599,39,1,11057.29,0,Recent Moderate Buyers,United Kingdom
+C10600,37,2,11099.289999999999,0,Recent Moderate Buyers,Portugal
+C10602,219,2,28947.46,3,At-Risk Big Spenders,Germany
+C10603,90,5,27708.129999999997,1,Champions (High-Value Loyal),United Kingdom
+C10605,61,4,45612.03,1,Champions (High-Value Loyal),India
+C10606,169,2,22697.19,3,At-Risk Big Spenders,India
+C10609,172,1,34404.01,3,At-Risk Big Spenders,United Kingdom
+C10610,61,2,11151.619999999999,0,Recent Moderate Buyers,United Kingdom
+C10611,184,1,1204.75,2,Low-Value Customers,India
+C10612,64,2,52192.37,0,Recent Moderate Buyers,United Kingdom
+C10613,164,2,14012.22,3,At-Risk Big Spenders,India
+C10614,252,1,2624.84,2,Low-Value Customers,United Kingdom
+C10617,92,1,4597.21,0,Recent Moderate Buyers,Germany
+C10618,134,2,9899.71,0,Recent Moderate Buyers,United Kingdom
+C10619,67,4,15189.26,1,Champions (High-Value Loyal),India
+C10620,37,3,14346.380000000001,1,Champions (High-Value Loyal),United Kingdom
+C10621,29,2,3440.1299999999997,0,Recent Moderate Buyers,United Kingdom
+C10622,125,2,5035.1,0,Recent Moderate Buyers,United Kingdom
+C10625,305,1,2195.46,2,Low-Value Customers,United Kingdom
+C10627,11,2,5677.55,0,Recent Moderate Buyers,United Kingdom
+C10628,186,2,8265.47,3,At-Risk Big Spenders,United Kingdom
+C10629,106,2,9044.6,0,Recent Moderate Buyers,United Kingdom
+C10631,290,1,6982.46,3,At-Risk Big Spenders,Canada
+C10633,113,1,1877.6799999999998,2,Low-Value Customers,United Kingdom
+C10634,128,4,9365.130000000001,1,Champions (High-Value Loyal),United Kingdom
+C10635,72,1,8138.509999999999,0,Recent Moderate Buyers,United Kingdom
+C10636,114,2,12826.55,0,Recent Moderate Buyers,United Kingdom
+C10637,15,2,11912.73,0,Recent Moderate Buyers,United Kingdom
+C10638,158,1,2815.45,2,Low-Value Customers,United Kingdom
+C10639,132,2,11554.95,0,Recent Moderate Buyers,United Kingdom
+C10641,198,2,29436.83,3,At-Risk Big Spenders,Canada
+C10642,57,4,22688.54,1,Champions (High-Value Loyal),United Kingdom
+C10643,66,2,11913.41,0,Recent Moderate Buyers,India
+C10644,109,1,581.6700000000001,2,Low-Value Customers,United Kingdom
+C10645,300,1,12384.02,3,At-Risk Big Spenders,Netherlands
+C10646,156,1,11264.08,3,At-Risk Big Spenders,United Kingdom
+C10647,38,3,24087.78,1,Champions (High-Value Loyal),Netherlands
+C10648,161,1,2049.04,2,Low-Value Customers,United Kingdom
+C10649,135,2,8806.84,0,Recent Moderate Buyers,United Kingdom
+C10650,181,1,1019.5899999999999,2,Low-Value Customers,United Kingdom
+C10651,85,1,550.93,2,Low-Value Customers,United Kingdom
+C10652,264,3,21540.66,3,At-Risk Big Spenders,United Kingdom
+C10653,177,1,3068.79,2,Low-Value Customers,Portugal
+C10655,307,1,4572.67,3,At-Risk Big Spenders,EIRE
+C10656,4,1,15191.16,0,Recent Moderate Buyers,United Kingdom
+C10657,12,4,19219.48,1,Champions (High-Value Loyal),United Kingdom
+C10658,80,3,21806.7,1,Champions (High-Value Loyal),India
+C10659,247,1,8066.95,3,At-Risk Big Spenders,United Kingdom
+C10661,135,2,11412.17,0,Recent Moderate Buyers,United Kingdom
+C10662,69,4,18156.14,1,Champions (High-Value Loyal),United Kingdom
+C10663,166,3,36501.4,1,Champions (High-Value Loyal),Singapore
+C10664,45,3,30239.0,1,Champions (High-Value Loyal),United Kingdom
+C10666,106,2,11908.84,0,Recent Moderate Buyers,India
+C10668,192,2,11873.220000000001,3,At-Risk Big Spenders,United Kingdom
+C10669,20,2,5357.17,0,Recent Moderate Buyers,United Kingdom
+C10672,304,1,19608.21,3,At-Risk Big Spenders,Netherlands
+C10673,97,3,28776.49,1,Champions (High-Value Loyal),Singapore
+C10676,70,4,7697.97,1,Champions (High-Value Loyal),India
+C10677,41,2,4460.610000000001,0,Recent Moderate Buyers,Germany
+C10679,149,2,24396.660000000003,0,Recent Moderate Buyers,United Kingdom
+C10683,139,2,17322.16,0,Recent Moderate Buyers,United Kingdom
+C10684,76,2,116064.96000000002,1,Champions (High-Value Loyal),United Kingdom
+C10686,99,2,12571.329999999998,0,Recent Moderate Buyers,United Kingdom
+C10687,11,2,24633.129999999997,0,Recent Moderate Buyers,India
+C10688,161,2,9695.630000000001,3,At-Risk Big Spenders,United Kingdom
+C10689,117,3,11400.2,1,Champions (High-Value Loyal),United Kingdom
+C10690,22,3,18387.940000000002,1,Champions (High-Value Loyal),India
+C10692,299,1,4960.32,3,At-Risk Big Spenders,United Kingdom
+C10696,143,5,34978.41,1,Champions (High-Value Loyal),India
+C10697,148,1,11496.880000000001,3,At-Risk Big Spenders,India
+C10698,128,1,1071.48,2,Low-Value Customers,Portugal
+C10699,184,1,3546.1,2,Low-Value Customers,United Kingdom
+C10701,163,2,6678.049999999999,3,At-Risk Big Spenders,India
+C10703,15,2,15175.39,0,Recent Moderate Buyers,EIRE
+C10704,48,3,8348.35,1,Champions (High-Value Loyal),United Kingdom
+C10705,48,2,26828.41,0,Recent Moderate Buyers,United Kingdom
+C10708,227,1,6731.86,3,At-Risk Big Spenders,United Kingdom
+C10709,30,3,30886.89,1,Champions (High-Value Loyal),United Kingdom
+C10710,21,4,51428.100000000006,1,Champions (High-Value Loyal),United Kingdom
+C10711,275,2,6968.8,3,At-Risk Big Spenders,India
+C10712,229,1,1390.17,2,Low-Value Customers,India
+C10715,128,2,5152.69,0,Recent Moderate Buyers,United Kingdom
+C10716,136,1,5683.76,0,Recent Moderate Buyers,United Kingdom
+C10717,44,1,2634.8,2,Low-Value Customers,United Kingdom
+C10720,70,3,14105.25,1,Champions (High-Value Loyal),United Kingdom
+C10721,117,1,8297.21,0,Recent Moderate Buyers,United Kingdom
+C10722,235,2,50076.1,3,At-Risk Big Spenders,Australia
+C10724,181,1,9316.59,3,At-Risk Big Spenders,United Kingdom
+C10725,63,7,58475.82,1,Champions (High-Value Loyal),Australia
+C10726,78,3,6869.4,1,Champions (High-Value Loyal),Singapore
+C10727,9,2,29786.26,0,Recent Moderate Buyers,India
+C10732,113,1,5970.639999999999,0,Recent Moderate Buyers,India
+C10733,274,1,17340.149999999998,3,At-Risk Big Spenders,Spain
+C10734,71,3,11988.82,1,Champions (High-Value Loyal),United Kingdom
+C10735,40,3,24111.4,1,Champions (High-Value Loyal),India
+C10736,124,3,17749.75,1,Champions (High-Value Loyal),India
+C10737,146,1,10328.740000000002,3,At-Risk Big Spenders,United Kingdom
+C10738,22,5,27240.39,1,Champions (High-Value Loyal),United Kingdom
+C10739,70,5,53240.09,1,Champions (High-Value Loyal),United Kingdom
+C10740,141,1,8313.900000000001,0,Recent Moderate Buyers,United Kingdom
+C10741,117,1,11286.86,0,Recent Moderate Buyers,India
+C10742,227,1,7221.88,3,At-Risk Big Spenders,EIRE
+C10743,170,1,1363.08,2,Low-Value Customers,United Kingdom
+C10744,124,4,20528.29,1,Champions (High-Value Loyal),India
+C10745,44,1,17365.39,0,Recent Moderate Buyers,United Kingdom
+C10747,34,2,5699.16,0,Recent Moderate Buyers,France
+C10748,51,2,9813.66,0,Recent Moderate Buyers,United Kingdom
+C10749,189,2,2888.2,2,Low-Value Customers,United Kingdom
+C10751,63,2,7467.97,0,Recent Moderate Buyers,United Kingdom
+C10752,33,3,12936.69,1,Champions (High-Value Loyal),Canada
+C10754,1,1,5791.58,0,Recent Moderate Buyers,United Kingdom
+C10755,27,3,13405.66,1,Champions (High-Value Loyal),Canada
+C10756,167,2,1544.13,2,Low-Value Customers,India
+C10757,64,2,15159.38,0,Recent Moderate Buyers,United Kingdom
+C10758,20,2,18665.01,0,Recent Moderate Buyers,United Kingdom
+C10759,158,2,1782.79,2,Low-Value Customers,United Kingdom
+C10760,109,3,36346.97,1,Champions (High-Value Loyal),United Kingdom
+C10761,76,3,20364.72,1,Champions (High-Value Loyal),Germany
+C10762,80,2,4643.84,0,Recent Moderate Buyers,India
+C10763,313,1,3308.3100000000004,3,At-Risk Big Spenders,Germany
+C10764,108,2,8546.21,0,Recent Moderate Buyers,United Kingdom
+C10765,25,2,4027.15,0,Recent Moderate Buyers,United Kingdom
+C10766,206,1,4945.45,3,At-Risk Big Spenders,Spain
+C10767,230,1,991.4,2,Low-Value Customers,United Kingdom
+C10768,230,2,22047.12,3,At-Risk Big Spenders,India
+C10769,59,2,19793.82,0,Recent Moderate Buyers,United Kingdom
+C10770,127,4,28954.440000000002,1,Champions (High-Value Loyal),Canada
+C10771,252,1,18152.49,3,At-Risk Big Spenders,India
+C10772,225,1,151.94,2,Low-Value Customers,United Kingdom
+C10773,123,4,37697.55,1,Champions (High-Value Loyal),United Kingdom
+C10774,184,1,7397.5,3,At-Risk Big Spenders,United Kingdom
+C10775,45,3,14303.2,1,Champions (High-Value Loyal),United Kingdom
+C10776,29,3,33181.97,1,Champions (High-Value Loyal),United Kingdom
+C10777,168,3,31814.14,1,Champions (High-Value Loyal),Singapore
+C10778,66,2,29351.39,0,Recent Moderate Buyers,Spain
+C10779,39,1,1168.18,2,Low-Value Customers,United Kingdom
+C10780,40,2,8358.33,0,Recent Moderate Buyers,United Kingdom
+C10781,273,2,7072.74,3,At-Risk Big Spenders,EIRE
+C10783,25,4,48352.49,1,Champions (High-Value Loyal),Germany
+C10785,266,1,3823.0199999999995,3,At-Risk Big Spenders,United Kingdom
+C10786,61,4,3681.21,1,Champions (High-Value Loyal),EIRE
+C10787,37,1,7091.83,0,Recent Moderate Buyers,Canada
+C10788,167,1,1420.62,2,Low-Value Customers,United Kingdom
+C10789,46,3,19457.11,1,Champions (High-Value Loyal),United Kingdom
+C10790,19,2,12404.24,0,Recent Moderate Buyers,United Kingdom
+C10791,15,2,14541.599999999999,0,Recent Moderate Buyers,Spain
+C10792,84,6,17808.83,1,Champions (High-Value Loyal),United Kingdom
+C10793,101,4,20949.36,1,Champions (High-Value Loyal),Netherlands
+C10794,164,2,11945.6,3,At-Risk Big Spenders,Netherlands
+C10795,36,2,9071.880000000001,0,Recent Moderate Buyers,United Kingdom
+C10797,211,1,1971.32,2,Low-Value Customers,United Kingdom
+C10799,194,2,4674.95,3,At-Risk Big Spenders,United Kingdom
+C10800,149,2,7917.969999999999,0,Recent Moderate Buyers,EIRE
+C10802,122,1,9229.61,0,Recent Moderate Buyers,United Kingdom
+C10803,25,1,4509.68,0,Recent Moderate Buyers,India
+C10804,73,5,24787.18,1,Champions (High-Value Loyal),Singapore
+C10807,298,1,666.6,2,Low-Value Customers,United Kingdom
+C10808,15,2,15029.73,0,Recent Moderate Buyers,United Kingdom
+C10809,136,1,2815.04,2,Low-Value Customers,United Kingdom
+C10812,170,1,383.72,2,Low-Value Customers,United Kingdom
+C10813,106,3,33984.47,1,Champions (High-Value Loyal),United Kingdom
+C10814,226,1,4451.67,3,At-Risk Big Spenders,India
+C10815,185,1,19713.12,3,At-Risk Big Spenders,United Kingdom
+C10816,40,2,5197.49,0,Recent Moderate Buyers,United Kingdom
+C10818,285,1,20491.56,3,At-Risk Big Spenders,United Kingdom
+C10819,197,2,9865.78,3,At-Risk Big Spenders,Germany
+C10821,22,6,45211.340000000004,1,Champions (High-Value Loyal),France
+C10822,225,2,16049.630000000001,3,At-Risk Big Spenders,United Kingdom
+C10823,39,5,8307.82,1,Champions (High-Value Loyal),India
+C10824,77,1,3268.62,2,Low-Value Customers,EIRE
+C10825,138,3,8709.2,1,Champions (High-Value Loyal),Canada
+C10826,315,1,13172.41,3,At-Risk Big Spenders,United Kingdom
+C10827,2,1,1577.38,2,Low-Value Customers,United Kingdom
+C10828,59,3,13027.31,1,Champions (High-Value Loyal),United Kingdom
+C10830,21,1,5008.52,0,Recent Moderate Buyers,Netherlands
+C10831,271,2,6124.18,3,At-Risk Big Spenders,Netherlands
+C10832,101,1,2247.3999999999996,2,Low-Value Customers,United Kingdom
+C10833,9,3,10581.6,1,Champions (High-Value Loyal),United Kingdom
+C10834,95,2,889.74,2,Low-Value Customers,United Kingdom
+C10835,318,1,15000.61,3,At-Risk Big Spenders,Germany
+C10837,82,3,30895.86,1,Champions (High-Value Loyal),India
+C10838,202,1,7383.76,3,At-Risk Big Spenders,United Kingdom
+C10839,53,2,2609.81,0,Recent Moderate Buyers,United Kingdom
+C10840,166,1,5039.34,3,At-Risk Big Spenders,Australia
+C10842,122,4,24155.04,1,Champions (High-Value Loyal),India
+C10843,251,1,606.55,2,Low-Value Customers,India
+C10844,48,3,30327.96,1,Champions (High-Value Loyal),EIRE
+C10845,267,2,18520.739999999998,3,At-Risk Big Spenders,EIRE
+C10846,9,2,36032.47,0,Recent Moderate Buyers,EIRE
+C10847,163,1,3056.76,2,Low-Value Customers,United Kingdom
+C10850,113,3,16796.48,1,Champions (High-Value Loyal),Germany

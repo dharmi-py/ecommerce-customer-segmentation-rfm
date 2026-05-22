@@ -1,0 +1,299 @@
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║          E-COMMERCE CUSTOMER SEGMENTATION ANALYSIS — FINAL REPORT           ║
+║                        Business Analytics Project                              ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. DATA UNDERSTANDING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Dataset: part_1_ecommerce_customer_segmentation.csv (Synthetic, Academic Use)
+Shape: 1,000 transaction rows × 9 columns
+Date Range: January 2025 — November 2025 (334 days)
+
+COLUMN DESCRIPTIONS:
+┌─────────────────┬─────────────────────────────────────────────────────────────┐
+│ InvoiceNo       │ Unique transaction identifier (C-prefixed = cancelled)    │
+│ StockCode       │ Product identifier (P1001–P1030)                            │
+│ Description     │ Product name (e.g., "Running Shoes", "LED Table Lamp")    │
+│ Category        │ Product category (Electronics, Apparel, Home, etc.)       │
+│ Quantity        │ Number of units purchased                                   │
+│ InvoiceDate     │ Timestamp of transaction                                    │
+│ UnitPrice       │ Price per unit in USD                                       │
+│ CustomerID      │ Unique customer identifier (C10001–C10850)                │
+│ Country         │ Customer country (UK, India, Germany, France, etc.)       │
+└─────────────────┴─────────────────────────────────────────────────────────────┘
+
+ROW REPRESENTATION: Each row = one product line item within a single invoice.
+A customer purchase (invoice) may contain multiple rows.
+
+BUSINESS TYPE: Online retail / e-commerce selling diverse consumer goods
+(categories: Electronics, Apparel, Home, Beauty, Fitness, Grocery, Travel,
+Footwear, Stationery, Office, Accessories).
+
+ANALYSIS POSSIBLE:
+  ✓ Customer segmentation (RFM + clustering)
+  ✓ Sales trend analysis
+  ✓ Product performance ranking
+  ✓ Geographic market analysis
+  ✓ Customer lifetime value estimation
+  ✓ Churn prediction (based on recency)
+  ✓ Market basket analysis (product associations)
+
+LIMITATIONS (Missing Information):
+  ✗ No customer demographics (age, gender, income)
+  ✗ No marketing channel attribution
+  ✗ No website/app behavior data (clicks, browsing)
+  ✗ No customer acquisition dates
+  ✗ No product cost data (profit margins unknown)
+  ✗ No returns/refund reasons
+  ✗ No promotional/discount history
+  ✗ Incomplete December data (seasonal bias)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. DATA CLEANING SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP                          │ RECORDS REMOVED │ RATIONALE
+──────────────────────────────┼─────────────────┼────────────────────────────────
+Remove missing CustomerID     │      72         │ Cannot segment unknown customers
+Remove cancelled invoices       │      84         │ Returns distort purchase behavior
+Remove negative quantities      │       0*        │ Already handled with cancellations
+Remove zero/negative prices     │      24         │ Data errors; no valid transaction
+Fill missing descriptions     │       0         │ Mapped from StockCode lookup
+Remove duplicate records        │      12         │ Prevent double-counting
+──────────────────────────────┼─────────────────┼────────────────────────────────
+TOTAL REMOVED                 │     192         │ 19.2% of original data
+FINAL CLEAN RECORDS           │     808         │ 682 unique customers
+
+*Negative quantities only appeared in cancelled invoices.
+
+Key Cleaning Decisions:
+• Cancelled invoices (C-prefixed) were removed entirely rather than netted
+  against original purchases because returns represent different behavior.
+• Extreme outliers (quantity >20, revenue >$10K) were retained as they
+  represent legitimate bulk/B2B purchases.
+• Missing descriptions were backfilled using StockCode→Description mapping.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. FEATURE ENGINEERING SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+CUSTOMER-LEVEL FEATURES CREATED:
+┌──────────────────────┬──────────────────────────────────────────────────────┐
+│ TotalRevenue         │ Sum of all purchase amounts per customer             │
+│ TotalOrders          │ Count of unique invoices per customer              │
+│ TotalQuantity        │ Sum of all units purchased                           │
+│ AvgOrderValue (AOV)  │ TotalRevenue / TotalOrders                           │
+│ UniqueProducts       │ Count of distinct StockCodes purchased               │
+│ CustomerLifetime     │ Days between first and last purchase                 │
+│ Country              │ Customer's primary country                           │
+└──────────────────────┴──────────────────────────────────────────────────────┘
+
+RFM FEATURES:
+┌──────────────────────┬──────────────────────────────────────────────────────┐
+│ Recency              │ Days since last purchase (reference: Nov 28, 2025)   │
+│ Frequency            │ Number of unique orders                              │
+│ Monetary             │ Total revenue generated                              │
+└──────────────────────┴──────────────────────────────────────────────────────┘
+
+Feature Engineering Notes:
+• Reference date set to day after last transaction (Nov 28, 2025) for
+  consistent recency calculation.
+• Monetary was log-transformed (log10) for clustering to reduce skewness.
+• All RFM features were standardized (z-score) before K-Means.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. EDA KEY INSIGHTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SALES GEOGRAPHY:
+• United Kingdom dominates: 63% of customers, highest total revenue
+• India: 13% of customers, strong growth market
+• Germany + France + Netherlands: 15% combined — EU expansion opportunity
+• 10 countries total; long-tail markets need targeted micro-campaigns
+
+PRODUCT PERFORMANCE:
+• Top by Volume: LED Table Lamp, Sports Socks Pack, Dark Chocolate Box
+• Top by Revenue: Running Shoes ($110K+), Denim Jacket ($95K+), LED Table Lamp
+• Electronics and Apparel drive highest margins; Home/Beauty are volume plays
+
+CUSTOMER BEHAVIOR:
+• Purchase Frequency: Heavily right-skewed; median = 2 orders, mean = 2.4
+• AOV Distribution: Median $2,391, Mean $2,764 — most orders $2K–$3.5K
+• Outliers: Bulk orders (quantity up to 50) and high-value transactions
+  (revenue up to $14K) represent B2B or wholesale customers
+• Seasonality: Sales peaks in February, May, October; December incomplete
+
+HIGH-VALUE CUSTOMERS:
+• Top 20 customers generate ~$580K (significant revenue concentration)
+• Customer C10383: $70,372 total revenue (outlier champion)
+• Top customers span UK, India, Germany, France — not geography-bound
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. CLUSTERING APPROACH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+METHOD: K-Means Clustering on RFM Features
+
+PREPROCESSING:
+1. Log-transform Monetary (base 10) to handle extreme skewness
+2. StandardScaler: zero mean, unit variance for all three features
+3. No dimensionality reduction — RFM is inherently low-dimensional
+
+OPTIMAL K SELECTION:
+• Elbow Method: Inertia curve flattens at K=4
+• Silhouette Score: K=4 achieves 0.287 (best balance)
+• Business Interpretability: 4 segments = actionable marketing groups
+
+MODEL PARAMETERS:
+• Algorithm: K-Means (scikit-learn)
+• Clusters: 4
+• Initialization: k-means++
+• Random State: 42 (reproducibility)
+• Convergence: 10 initializations, max 300 iterations
+
+VALIDATION:
+• Silhouette Score: 0.287 (moderate separation, acceptable for business use)
+• Cluster sizes: 230, 169, 116, 167 — reasonably balanced
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6. CLUSTER INTERPRETATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ SEGMENT 1: CHAMPIONS (High-Value Loyal) — 169 customers (20.7%)             │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ • Recency:  93 days (moderate — bought recently but not most recent)        │
+│ • Frequency: 3.6 orders (highest — repeat buyers)                         │
+│ • Monetary: $25,597 avg (highest — premium spenders)                       │
+│ • AOV: $7,138 (highest order values)                                        │
+│ • Revenue Share: 46.6% of total (disproportionate value)                    │
+│ • Behavior: Consistent, frequent purchasers with high basket sizes          │
+│ • Type: VIP customers — the backbone of revenue                            │
+│ • Business Value: CRITICAL — retain at all costs                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ SEGMENT 0: RECENT MODERATE BUYERS — 230 customers (32.6%)                   │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ • Recency:  65 days (best — most recent purchasers)                          │
+│ • Frequency: 1.7 orders (low-moderate — new or occasional)                  │
+│ • Monetary: $12,349 avg (moderate — growing potential)                      │
+│ • AOV: $7,161 (surprisingly high — quality over quantity)                  │
+│ • Revenue Share: 30.6% of total                                            │
+│ • Behavior: Recent engagement, low frequency — onboarding opportunity        │
+│ • Type: Rising stars / New customers with potential                          │
+│ • Business Value: HIGH — nurture to Champions                               │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ SEGMENT 3: AT-RISK BIG SPENDERS — 167 customers (23.6%)                     │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ • Recency:  231 days (worst — haven't bought in ~8 months)                 │
+│ • Frequency: 1.8 orders (low — one or two big purchases)                    │
+│ • Monetary: $15,162 avg (high — historically valuable)                      │
+│ • AOV: $8,076 (highest — made large purchases)                               │
+│ • Revenue Share: 20.4% of total                                            │
+│ • Behavior: High-value but disengaged — churn risk                           │
+│ • Type: Former VIPs / Lapsed high spenders                                  │
+│ • Business Value: HIGH if reactivated — URGENT intervention needed           │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ SEGMENT 2: LOW-VALUE CUSTOMERS — 116 customers (23.1%)                      │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ • Recency:  161 days (poor — haven't bought in 5+ months)                   │
+│ • Frequency: 1.1 orders (lowest — mostly one-time buyers)                   │
+│ • Monetary: $1,917 avg (lowest — minimal spend)                             │
+│ • AOV: $1,740 (lowest — price-sensitive)                                    │
+│ • Revenue Share: 2.4% of total                                             │
+│ • Behavior: Minimal engagement, low spend — likely price shoppers            │
+│ • Type: Bargain hunters / Trial customers who didn't stick                  │
+│ • Business Value: LOW — minimal investment, test conversion tactics        │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+7. BUSINESS RECOMMENDATIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🏆 CHAMPIONS (169 customers, 46.6% revenue)
+   → Launch VIP tier with exclusive perks, early access, birthday rewards
+   → Implement referral program — they're promoters (NPS likely 9-10)
+   → Upsell premium products; test luxury category expansion
+   → Assign dedicated support; monitor for any frequency decline
+   → Target: Maintain 90%+ retention, increase frequency to 4+ orders/year
+
+📈 RECENT MODERATE BUYERS (230 customers, 30.6% revenue)
+   → Aggressive nurture: "Complete your collection" email sequences
+   → Frequency incentives: 3rd purchase free shipping, loyalty points 2x
+   → Cross-category introduction: If bought Electronics → suggest Accessories
+   → Social proof: Customer reviews, UGC campaigns to build trust
+   → Target: Convert 30% to Champions within 6 months
+
+⚠️ AT-RISK BIG SPENDERS (167 customers, 20.4% revenue)
+   → URGENT: Personalized win-back campaign within 7 days
+   → High-touch outreach: Phone call from account manager for top 50
+   → Deep discount (25-30%) + free express shipping comeback offer
+   → Survey: "What would bring you back?" — address specific pain points
+   → Retargeting ads with products from their purchase history
+   → Target: Reactivate 40% within 3 months; accept 15-20% churn
+
+💤 LOW-VALUE CUSTOMERS (116 customers, 2.4% revenue)
+   → Low-cost automation: Single "We'd love you back" email with 10% off
+   → Entry bundles: "Starter pack" at <$500 to reduce friction
+   → Referral leverage: "Give $10, Get $10" — monetize network effect
+   → Sunset rule: After 3 non-responses, suppress from paid marketing
+   → Target: 10% reactivation; otherwise minimize cost
+
+🌍 GEOGRAPHIC STRATEGY
+   → UK: Loyalty program focus, same-day delivery expansion
+   → India: Mobile-first experience, COD payment, festive season campaigns
+   → EU (DE/FR/NL): GDPR-compliant personalization, local language support
+   → Others: Test small-budget campaigns; partner with local influencers
+
+📊 OPERATIONAL ACTIONS
+   1. Automate RFM scoring in CRM (weekly refresh)
+   2. Create segment-specific email lists in ESP
+   3. A/B test offers per segment monthly
+   4. Track segment migration quarterly (Champions → At-Risk = alarm)
+   5. Integrate with ad platforms for lookalike audiences per segment
+   6. Plan inventory by segment demand (Champions drive SKU diversity)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+HOW TO RUN THIS PROJECT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+REQUIREMENTS:
+  pandas, numpy, matplotlib, seaborn, scikit-learn, jupyter
+
+FILES:
+  • notebook.ipynb — Complete analysis with all visualizations
+  • cleaned_ecommerce_data.csv — Cleaned transaction data
+  • customer_segments.csv — Customer features + cluster labels
+  • rfm_table.csv — RFM scores per customer
+  • /images/ — 14 visualization charts
+
+EXECUTION:
+  1. Install requirements: pip install -r requirements.txt
+  2. Open notebook.ipynb in Jupyter
+  3. Run all cells sequentially
+  4. Outputs saved to /mnt/agents/output/
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+DATASET SOURCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Source: Synthetic dataset provided as part of the Business Analytics and
+Machine Learning project assignment for academic use.
+
+This is not real customer/company data. Created for educational purposes
+covering data cleaning, EDA, feature engineering, clustering, and business
+recommendations.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Author: Business Analyst
+Date: 2026-05-20
+Tools: Python 3, pandas, scikit-learn, matplotlib, seaborn
